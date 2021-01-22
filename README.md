@@ -45,3 +45,5 @@ lsblk <br>
 sudo umount /dev/sdc <br>
 
 sudo dd if=HadesOS.iso of=/dev/sdc bs=4M && sync <br>
+
+<p align="center"><img src="img/hades_os.jpeg"> <br> </p>
