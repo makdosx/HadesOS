@@ -1,5 +1,7 @@
 # HadeOS
-HadesOS is a mini operating system with microkernel. <br> <br> <br>
+HadesOS is a mini operating system with microkernel. <br> <br> 
+
+<p align="center"><img src="img/microkernel.jpeg"> </p>
 
 #1) Compile and create Hades Operating System <br> <br>
 
