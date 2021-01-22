@@ -32,7 +32,7 @@ chmod -R 777 isohades <br>
 grub-mkrescue -o HadesOS.iso isohades <br> <br>
 
 #(if want) run it in qemu (virtualbox) for testing <br>
-#qemu-system-x86_64 -cdrom HadesOS.iso <br> <br> <br>
+ qemu-system-x86_64 -cdrom HadesOS.iso <br> <br> <br>
 
 
 
