@@ -1,12 +1,14 @@
 # HadeOS
 HadesOS is a mini operating system with microkernel. <br> <br> 
 
-<p align="center"><img src="img/microkernel.jpeg"> </p>
+<p align="center"><img src="img/microkernel.jpeg"> <br> </p>
 
 #1) Compile and create Hades Operating System <br> <br>
 
 #assemble boot.s file <br>
 as --32 boot.s -o boot.o <br> <br>
+
+<p align="center"><img src="img/boot.png">  </br> </p>
 
 #compile kernel.c file <br>
 gcc -m32 -c kernel.c -o kernel.o -std=gnu99 -ffreestanding -O1 -Wall -Wextra <br> <br>
@@ -15,6 +17,8 @@ gcc -m32 -c utilities.c -o utilities.o -std=gnu99 -ffreestanding -O1 -Wall -Wext
 
 #linking the kernel with kernel.o and bootloader.o files <br>
 ld -m elf_i386 -T linker.ld kernel.o utilities.o boot.o -o HadesOS.bin -nostdlib <br> <br>
+
+<p align="center"><img src="img/linker.png">  </br> </p>
  
 #check HadesOS.bin file is x86 multiboot file or not <br> 
 grub-file --is-x86-multiboot HadesOS.bin <br> <br>
