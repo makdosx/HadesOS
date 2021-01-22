@@ -40,7 +40,7 @@ grub-mkrescue -o HadesOS.iso isohades <br> <br>
 
 lsblk <br>
 
-#mkfs.vfat -I /dev/sdc <br>
+mkfs.vfat -I /dev/sdc <br>
 
 sudo umount /dev/sdc <br>
 
