@@ -32,9 +32,9 @@ grub-mkrescue -o HadesOS.iso isohades <br> <br>
 
 #2) installation on usb <br> <br>
 
-lsblk <br> <br>
+lsblk <br>
 
-#mkfs.vfat -I /dev/sdc <br> <br>
+#mkfs.vfat -I /dev/sdc <br>
 
 sudo umount /dev/sdc <br>
 sudo dd if=HadesOS.iso of=/dev/sdc bs=4M && sync <br>
